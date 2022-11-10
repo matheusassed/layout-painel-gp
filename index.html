@@ -8,11 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="Painel_RH.css">
 
 </head>
@@ -20,13 +15,14 @@
 <body>
     <!-- partial:index.partial.html -->
     <header>
-        <img src="https://anprotec.org.br/site/wp-content/uploads/2020/06/sebrae-logo-1-1024x554.png" alt="Logo Sebrae">
+        <img src="logo.png" alt="Logo Sebrae">
         <div class="header-text">
             <h1><strong>Painel de análise</strong></h1>
-            <h2>Gestão de Pessoas</h2>
+            <h2><strong>Gestão de Pessoas</strong></h2>
         </div>
     </header>
     <div class="all">
+
         <div class="lefter4 link" data-link='55c1efab-b4b8-400a-b60f-0184c6588302'>
             <div class="text lower-text">Ponto Eletrônico - Abonos</div>
         </div>
@@ -52,6 +48,8 @@
         </div>
 
         <div class="center link" data-link='46764220-e2d5-44e0-b8bb-edb6784eee8d'>
+            <div class="explainer">
+			<span>Iniciar</span></div>
             <div class="text">Dados Cadastrais</div>
         </div>
 
@@ -82,6 +80,30 @@
     </div>
 
     <a href="https://yoshidaqlik.com.br" target="_blank" id="back"></a>
+
+    <!-- partial -->
+    <!-- <script src="./script.js"></script> -->
+
+    <script>
+        const links = document.querySelectorAll('div.link');
+        for (link of links) {
+
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const app_id = 'aba43f9b-14d4-4e5d-8908-1459f349859d';
+
+                const link_visualizacao = e.target.dataset.link || e.target.parentNode.dataset.link || e.target.parentNode.parentNode.dataset.link;
+                const url = `https://analisededados.sebrae.com.br/sense/app/${app_id}/sheet/${link_visualizacao}`;
+                
+                // FAZ O REDIRECIONAMENTO
+                window.location = url;
+
+            });
+        }
+
+    </script>
+
 </body>
 
 </html>
