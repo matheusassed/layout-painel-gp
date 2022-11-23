@@ -428,11 +428,6 @@ h2 {
 }
 
 
-body {
-  background: #FFF url("./background-painel-rh-2.png") no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
 .all {
   max-width: calc(100% - 100px);
 }
@@ -478,9 +473,15 @@ body {
   width: 100px;
   transform: translateX(-50%);
 }
-header h1, h2{
+header h1{
   font-family: 'ABeeZee', 'Lato', sans-serif;
   color: #4471C4;
+  font-size: 1.5em;
+}
+header h2{
+  font-family: 'ABeeZee', 'Lato', sans-serif;
+  color: #4471C4;
+  font-size: 1.2em;
 }
 .text{
   font-family: 'ABeeZee', 'Lato', sans-serif;
@@ -489,6 +490,11 @@ header h1, h2{
 @media screen and (min-width: 1000px){
   .text{
     transform: translateY(-40px);
+  }
+  body {
+    background: #FFF url("./background-painel-rh-2.png") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
   }
 }
 @media screen and (max-width: 1000px){
