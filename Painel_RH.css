@@ -446,7 +446,7 @@ h2 {
 }
 .decoration-top{
   background: transparent;
-  width: 40%;
+  width: calc(50% - 110px);
   height: 53%;
   position: absolute;
   border-top: 2px solid #4471C4;
@@ -454,6 +454,17 @@ h2 {
   border-radius: 2px;
   box-sizing: border-box;
   left: 30px;
+  top: 30px;
+}
+.decoration-top-2{
+  background: transparent;
+  width: 12%;
+  height: 3px;
+  position: absolute;
+  border-top: 2px solid #4471C4;
+  border-radius: 2px;
+  box-sizing: border-box;
+  left: calc(50% + 80px);
   top: 30px;
 }
 .logomarca{
@@ -465,9 +476,10 @@ h2 {
 }
 header h1, h2{
   font-family: 'ABeeZee', 'Lato', sans-serif;
+  color: #4471C4;
 }
 @media screen and (max-width: 1000px){
-  .logomarca, .decoration-bottom, .decoration-top{
+  .logomarca, .decoration-bottom, .decoration-top, .decoration-top-2{
     display: none;
   }
 }
