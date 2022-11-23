@@ -496,6 +496,12 @@ header h2{
     background-position: center;
     background-size: 100% 100%;
   }
+  header h1{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
 }
 @media screen and (max-width: 1000px){
   .logomarca, .decoration-bottom, .decoration-top, .decoration-top-2{
