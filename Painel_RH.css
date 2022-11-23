@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -196,8 +198,9 @@ h2 {
     justify-content: center;
     align-items: center;
     font-weight: 300;
+    position: relative;
 
-    background: #FFF url("./background-painel-rh.jpeg") no-repeat;
+    background: #FFF url("./background-painel-rh.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
   }
@@ -421,5 +424,50 @@ h2 {
 @media (min-width: 1350px) {
   .lower-text {
     bottom: -20px;
+  }
+}
+
+
+
+.all {
+  max-width: calc(100% - 100px);
+}
+.decoration-bottom{
+  background: transparent;
+  width: 66%;
+  height: 40%;
+  position: absolute;
+  border-bottom: 2px solid #4471C4;
+  border-right: 2px solid #4471C4;
+  border-radius: 2px;
+  box-sizing: border-box;
+  right: 30px;
+  bottom: 30px;
+}
+.decoration-top{
+  background: transparent;
+  width: 40%;
+  height: 53%;
+  position: absolute;
+  border-top: 2px solid #4471C4;
+  border-left: 2px solid #4471C4;
+  border-radius: 2px;
+  box-sizing: border-box;
+  left: 30px;
+  top: 30px;
+}
+.logomarca{
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  width: 100px;
+  transform: translateX(-50%);
+}
+header h1, h2{
+  font-family: 'ABeeZee', 'Lato', sans-serif;
+}
+@media screen and (max-width: 1000px){
+  .logomarca, .decoration-bottom, .decoration-top{
+    display: none;
   }
 }
