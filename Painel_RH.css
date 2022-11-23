@@ -428,7 +428,11 @@ h2 {
 }
 
 
-
+body {
+  background: #FFF url("./background-painel-rh-2.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
 .all {
   max-width: calc(100% - 100px);
 }
