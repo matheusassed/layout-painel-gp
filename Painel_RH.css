@@ -492,7 +492,7 @@ header h2{
     transform: translateY(-40px);
   }
   body {
-    background: #FFF url("./background-painel-rh-2.png") no-repeat;
+    background: #FFF url("./background-painel-rh.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
   }
