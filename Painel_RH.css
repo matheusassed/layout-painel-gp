@@ -478,6 +478,15 @@ header h1, h2{
   font-family: 'ABeeZee', 'Lato', sans-serif;
   color: #4471C4;
 }
+.text{
+  font-family: 'ABeeZee', 'Lato', sans-serif;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 1000px){
+  .text{
+    transform: translateY(-40px);
+  }
+}
 @media screen and (max-width: 1000px){
   .logomarca, .decoration-bottom, .decoration-top, .decoration-top-2{
     display: none;
